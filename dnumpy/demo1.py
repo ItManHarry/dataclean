@@ -2,6 +2,7 @@ import numpy as np
 a1 = np.array([1, 2, 3, 4, 5])
 print(type(a1))
 print(a1)
+print(a1.ndim)
 print(a1[0])
 # 指定数据类型
 a2 = np.array([1, 2, 3], dtype=str)
