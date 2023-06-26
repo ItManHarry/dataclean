@@ -24,7 +24,7 @@ a7 = np.zeros(4)
 print(a7)
 a8 = np.ones([2, 6])
 print(a8)
-# 每个元素加一
+# 每个元素加1.5
 a8 += 1.5
 print(a8)
 # 数据方法一：维数
