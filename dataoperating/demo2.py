@@ -8,6 +8,16 @@ os.chdir(r'D:\\Development\\Python\\Dataclean\\data')
 # 插入列 dataframe.insert
 df = pd.read_csv('baby_trade_history.csv')
 print(df.head(10))
+new_column = np.where(df['buy_mount'] > 3, '高', '低')
+new_df = pd.DataFrame()
+new_df['UserID'] = df['user_id']
+new_df['buy_level'] = new_column
+new_df.to_csv('new_baby_trade_history.csv', encoding='gbk', index=False)
+print('New column type is : ', type(new_column))
+print('New column data is : ', new_column)
+print('New column data size is : ', new_column.size)
+for index, data in enumerate(new_column):
+    print('Index is {}, Data is {}. '.format(index, data))
 df['购买量'] = np.where(df['buy_mount'] > 3, '高', '低')
 print(df.head(30))
 auction_column = df['auction_id']

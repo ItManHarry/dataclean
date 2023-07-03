@@ -6,8 +6,10 @@ s1 = pd.Series((1, 24.5, 12.4, 45.8, 11.9))
 print(s1)
 print(type(s1))
 print(s1.index)
+print('-' * 80)
 s2 = pd.Series((1, 24.5, 12.4, 45.8, 11.9), index=['a', 'b', 'c', 'd', 'e'], name='Series1')
 print(s2)
+print('-' * 80)
 s3 = pd.Series(dict(a=100, b=24.5, c=23.6, d=200))
 print(s3)
 # 访问
@@ -15,8 +17,10 @@ print(s3[0])
 print(s3[1:3])
 print(s3['a'])
 print(s3['a': 'c'])
+print('-' * 80)
 # values方法
 values = s3.values
 print(values)
+print('-' * 80)
 index = s3.index
 print(index)
