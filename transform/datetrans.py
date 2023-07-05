@@ -14,7 +14,7 @@ print(df.info())
 # to_datetime()
 df['buy_day'] = pd.to_datetime(df['day'], format='%Y%m%d', errors='coerce')
 print(df.info())
-# 年月份分别提取
+# 年月日分别提取
 print(df['buy_day'].dt.year)
 print(df['buy_day'].dt.month)
 print(df['buy_day'].dt.day)
