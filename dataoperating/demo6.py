@@ -11,4 +11,4 @@ for item in data.values:
 print(procedures)
 data = pd.DataFrame(procedures)
 print(data)
-data.to_csv(r'斗山名称修改_去重.csv', encoding='gbk')
+data.to_csv(r'斗山名称修改_去重.csv', encoding='gbk', index=False)
